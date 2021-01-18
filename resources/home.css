@@ -1,5 +1,27 @@
+
+.cita{
+  text-align: justify !important;
+  font-style: italic;
+  padding: 0.5rem !important;
+  color: #555;
+  font-size: 1.1rem !important;
+}
+
+.m-auto{
+  margin:auto !important;
+}
+
 .ml-1{
   margin-left: 5px !important;
+}
+
+.justificado{
+  text-align: justify !important;
+}
+
+.px-2{
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
 }
 
 #banner-container{
