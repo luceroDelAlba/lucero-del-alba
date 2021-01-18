@@ -7,6 +7,16 @@
   font-size: 1.1rem !important;
 }
 
+.less-margin{
+  margin-top: 1.5em !important;
+  margin-bottom: 1.5em !important;
+}
+
+.less-padding{
+  padding-top: 3em !important;
+  padding-botton: 3em !important;
+}
+
 .nota{
   padding: 1rem;
 }
