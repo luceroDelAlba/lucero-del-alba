@@ -110,7 +110,7 @@ var elementosTemplo = [
 ];
  
 $(function() {
-    let grado = sessionStorage.getItem("grado");
+    /* let grado = sessionStorage.getItem("grado");
     let hashGrado = CryptoJS.SHA1(grado).toString();;
     if(hashGrado != '356a192b7913b04c54574d18c28d46e6395428ab'){
         $('body').html('');
@@ -122,7 +122,9 @@ $(function() {
     else{
         $('body').html(body);
         initDistTemplo();
-    }
+    } */
+    
+    initDistTemplo();
     
     $('#imgDistro').click((e) => {
         let offset = $('#imgDistro').offset();
