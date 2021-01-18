@@ -1,17 +1,10 @@
 'use strict';
 
 $(function() {
-    /* let grado = sessionStorage.getItem("grado");
+    let grado = sessionStorage.getItem("grado");
     let hashGrado = CryptoJS.SHA1(grado).toString();;
     if(hashGrado != '77de68daecd823babbb58edb1c8e14d7106e83bb'){
-        $('body').html('');
-        setTimeout(function(){
-            alert('¡CUIDADO!¡NO ES DE TU GRADO!');
-            window.location.href='../index.html';
-        }, 300);
+        window.location.href='../index.html';
     }
-    else{
-        $('body').html(body);
-    } */
 });
 
