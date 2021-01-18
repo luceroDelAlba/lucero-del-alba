@@ -16,7 +16,7 @@ $(function() {
         $('body').html(body);
     }
 
-    $('.special.cards .image').dimmer({
+   /*  $('.special.cards .image').dimmer({
         on: 'hover'
-      });
+      }); */
 });
