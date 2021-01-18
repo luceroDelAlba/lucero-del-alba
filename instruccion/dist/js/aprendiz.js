@@ -1,10 +1,9 @@
 'use strict';
 
-var body = $('body').html();
- 
 $(function() {
     let grado = sessionStorage.getItem("grado");
-    let hashGrado = CryptoJS.SHA1(grado).toString();;
+    let hashGrado = CryptoJS.SHA1(grado).toString();
+    var body = $('body').html();
     if(hashGrado != '356a192b7913b04c54574d18c28d46e6395428ab'){
         $('body').html('');
         setTimeout(function(){
@@ -16,7 +15,7 @@ $(function() {
         $('body').html(body);
     }
 
-   /*  $('.special.cards .image').dimmer({
+    $('.special.cards .image').dimmer({
         on: 'hover'
-      }); */
+      });
 });
