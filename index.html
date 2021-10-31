@@ -173,12 +173,12 @@
         .nag('show')
       ;
 
-      console.log(document.cookie)
-
-      $('#accepts-cookies').click(function(){
-        document.cookie='accepts-cookies=true';
-      })
-      ;
+      if(!document.cookie.includes('accepts-cookies')){
+        $('#accepts-cookies').click(function(){
+          document.cookie='accepts-cookies=true';
+        })
+        ;
+      }
 
     })
   ;
@@ -451,7 +451,6 @@
   <div>
     <button id="accepts-cookies" class="ui close icon teal button">Aceptar</button>
   </div>
-  <i class="close icon"></i>
 </div>
 
 </body>
