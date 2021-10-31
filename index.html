@@ -44,12 +44,13 @@
   <style type="text/css">
     .cookie.nag {
       position: fixed;
-      display: flex;
-      flex-direction: column;
-      align-content: space-between;
-      justify-content: space-between;
+      display: hidden;
       height: 100px;
       top: calc(100vh - 100px)
+    }
+
+    #accepts-cookies {
+      margin: 20px;
     }
 
     .hidden.menu {
@@ -169,10 +170,14 @@
 
       // displays cookies message
       $('.cookie.nag')
-        .nag({
-          key      : 'accepts-cookies',
-          value    : true
-        })
+        .nag('show')
+      ;
+
+      console.log(document.cookie)
+
+      $('#accepts-cookies').click(function(){
+        document.cookie='accepts-cookies=true';
+      })
       ;
 
     })
@@ -444,7 +449,7 @@
     Este sitio web, al igual que la mayoría de los sitios en Internet, usa Cookies para mejorar y optimizar la experiencia del usuario.
   </span>
   <div>
-    <button class="ui close icon teal button">Aceptar</button>
+    <button id="accepts-cookies" class="ui close icon teal button">Aceptar</button>
   </div>
   <i class="close icon"></i>
 </div>
