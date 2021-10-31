@@ -185,16 +185,16 @@
       ;
 
       // displays cookies message
-      $('.cookie.nag')
-        .nag('show')
-      ;
-
-      if(getCookie('accepts-cookies') === true){
-        $('#accepts-cookies').click(function(){
-          document.cookie='accepts-cookies=true';
-        })
+      if(!getCookie('accepts-cookies')){
+        $('.cookie.nag')
+          .nag('show')
         ;
       }
+      
+      $('#accepts-cookies').click(function(){
+        document.cookie='accepts-cookies=true';
+      })
+      ;
 
     })
   ;
