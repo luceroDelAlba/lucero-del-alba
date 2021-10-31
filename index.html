@@ -42,6 +42,15 @@
   <link rel="stylesheet" type="text/css" href="resources/components/transition.css">
 
   <style type="text/css">
+    .cookie.nag {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+      justify-content: space-between;
+      height: 100px;
+      top: calc(100vh - 100px)
+    }
 
     .hidden.menu {
       display: none;
@@ -156,6 +165,14 @@
       // create sidebar and attach to menu open
       $('.ui.sidebar')
         .sidebar('attach events', '.toc.item')
+      ;
+
+      // displays cookies message
+      $('.cookie.nag')
+        .nag({
+          key      : 'accepts-cookies',
+          value    : true
+        })
       ;
 
     })
@@ -420,6 +437,16 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="ui inline cookie nag">
+  <span class="title ui row">
+    Este sitio web, al igual que la mayoría de los sitios en Internet, usa Cookies para mejorar y optimizar la experiencia del usuario.
+  </span>
+  <div>
+    <button class="ui close icon teal button">Aceptar</button>
+  </div>
+  <i class="close icon"></i>
 </div>
 
 </body>
