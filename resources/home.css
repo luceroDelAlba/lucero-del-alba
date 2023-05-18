@@ -40,7 +40,7 @@
 
 #banner-container{
   background:url("img/banner.jpg") no-repeat center;
-  background-position-y: -90vh;
+  background-position-y: -130vh;
   object-fit: contain;
   margin:0;
   width: 100%;
@@ -51,7 +51,7 @@
 
 #header-text{
   width: 100%;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.2);
   padding: 2rem;
   text-align: left;
 }
@@ -72,4 +72,8 @@
   margin-top: 0px !important;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.ldh-section {
+  margin-bottom: 25px;
 }
